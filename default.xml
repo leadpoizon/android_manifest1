@@ -9,25 +9,31 @@
            fetch="https://github.com/leadpoizon/" />
 
   <remote name="nexus"
-           fetch="https://github.com/PureNexus/" /> 
+           fetch="https://github.com/PureNexus/" />
+
+  <remote name="chroma"
+           fetch="https://github.com/Chroma-Aosp/" />
+
+  <remote name="cm"
+           fetch="https://github.com/CyanogenMod/" />
 
   <default revision="refs/tags/android-6.0.0_r1"
            remote="aosp"
            sync-j="4" />
 
-  <!-- Pure Repo's -->
+  <!-- Custom Repo's -->
   <project path="build" name="android_build" groups="pdk" remote="nexus" revision="mm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="manifest" name="android_manifest" remote="nexus" revision="mm" />
-  <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
-  <project path="external/busybox" name="android_external_busybox" remote="nexus" revision="mm" />
+  <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="chroma" revision="mm6.0" />
+  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
   <project path="external/google" name="android_external_google" remote="nexus" revision="mm" />
   <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="nexus" revision="mm" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="nexus" revision="mm" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="nexus" revision="mm" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="nexus" revision="mm" />
-  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nexus" revision="mm" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="lead" revision="mm6.0" />
   <project path="packages/apps/PureNexusSettings" name="android_packages_apps_PureNexusSettings" remote="nexus" revision="mm" />
   <project path="packages/apps/ScreenRecorder" name="android_packages_apps_ScreenRecorder" remote="nexus" revision="mm" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lead" revision="mm" />
