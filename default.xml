@@ -45,7 +45,6 @@
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="nexus" revision="mm" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nexus" revision="mm" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="nexus" revision="mm" />
-  <project path="packages/apps/WallpaperPicker" name="packages_apps_WallpaperPicker" remote="nexus" revision="mm" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nexus" revision="mm" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs" remote="nexus" revision="mm" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="nexus" revision="mm" />
