@@ -28,10 +28,10 @@
            sync-j="4" />
 
   <!-- Custom Repo's -->
-  <project path="build" name="android_build" groups="pdk" remote="pd" revision="marshmallow" >
+  <project path="build" name="android_build" groups="pdk" remote="nexus" revision="mm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="vendor/disco" name="android_vendor_disco" remote="pd" revision="marshmallow" />
+  <project path="vendor/disco" name="android_vendor_nexus" remote="nexus" revision="mm" />
   <project path="frameworks/base" name="android_frameworks_base" remote="pd" revision="marshmallow" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pd" revision="marshmallow" />
 
