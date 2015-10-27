@@ -19,9 +19,6 @@
            
   <remote name="cm"
            fetch="https://github.com/CyanogenMod/" />
-           
-  <remote  name="blobs"
-           fetch="https://github.com/ThankYouHeisenberg" />
 
   <default revision="refs/tags/android-6.0.0_r1"
            remote="aosp"
