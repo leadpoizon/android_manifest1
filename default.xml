@@ -32,12 +32,12 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="vendor/nexus" name="android_vendor_nexus" remote="nexus" revision="mm" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="nexus" revision="mm" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nexus" revision="mm" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="lead" revision="mm" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lead" revision="mm" />
   <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" groups="pdk-fs" remote="cm" revision="cm-13.0" />
   
   <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
-  <project path="external/busybox" name="android_external_busybox" remote="nexus" revision="mm" />
+  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
   <project path="external/google" name="android_external_google" remote="nexus" revision="mm" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="nexus" revision="mm" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="nexus" revision="mm" />
