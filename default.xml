@@ -28,20 +28,20 @@
   <project path="build" name="android_build" groups="pdk" remote="nexus" revision="mm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="vendor/nexus" name="android_vendor_nexus" remote="nexus" revision="mm" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="lead" revision="mm" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="lead" revision="mm" />
-  <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" groups="pdk-fs" remote="cm" revision="cm-13.0" />
-  
-  <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
-  <project path="external/busybox" name="android_external_busybox" remote="cm" revision="cm-13.0" />
+  <project path="manifest" name="android_manifest" remote="nexus" revision="mm" />
+  <project path="external/busybox" name="android_external_busybox" remote="nexus" revision="mm" />
+  <project path="external/chromium-webview" name="external_chromium-webview" remote="nexus" revision="mm" />
   <project path="external/google" name="android_external_google" remote="nexus" revision="mm" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="nexus" revision="mm" />
+  <project path="packages/apps/Calculator" name="android_packages_apps_Calculator" groups="pdk-fs" remote="cm" revision="cm-13.0" />
   <project path="packages/apps/CellBroadcastReceiver" name="android_packages_apps_CellBroadcastReceiver" remote="nexus" revision="mm" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="nexus" revision="mm" />
-  <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="cm" revision="cm-13.0" />
   <project path="packages/apps/InCallUI" name="android_packages_apps_InCallUI" remote="nexus" revision="mm" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="nexus" revision="mm" />
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="nexus" revision="mm" />
+  <project path="packages/apps/PureNexusSettings" name="android_packages_apps_PureNexusSettings" remote="nexus" revision="mm" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nexus" revision="mm" />
+  <project path="packages/apps/WallpaperPicker" name="packages_apps_WallpaperPicker" remote="nexus" revision="mm" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nexus" revision="mm" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs" remote="nexus" revision="mm" />
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="nexus" revision="mm" />
@@ -49,6 +49,7 @@
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="nexus" revision="mm" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="nexus" revision="mm" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="nexus" revision="mm" />
+  <project path="vendor/nexus" name="android_vendor_nexus" remote="nexus" revision="mm" />
 
   <!-- Kernel Source -->
   <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
