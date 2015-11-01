@@ -55,7 +55,7 @@
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="nexus" revision="mm" />
   
 <!-- KERNEL -->
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="lead" revision="mm" />
   
 <!-- BEGIN AOSP -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
